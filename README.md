@@ -36,10 +36,12 @@ It was developed as part of the NIT Hackathon, showcasing how Natural Language P
 
 📊 Datasets
 
-ISOT Fake News Dataset
+## Dataset
 
-Fake.csv → Fake news articles
+The dataset WELFake_Dataset.csv is too large for GitHub.
+You can download it from Google Drive here:  
+[WELFake_Dataset.csv (233 MB)](https://drive.google.com/file/d/1nZQrvCcy_umMI7nhaTf9wqhY9n3ksNG3/view?usp=drive_link)
 
-True.csv → Real news articles
+**Instructions:**  
+After downloading, place the CSV in the same directory as your code before running scripts that need it.
 
-Kaggle Fake or Real News Dataset (fake_or_real_news.csv)
