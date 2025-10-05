@@ -96,10 +96,11 @@ with gr.Blocks(theme=gr.themes.Soft(), css="""
             return df, out_path
         run_batch.click(batch_wrapper, inputs=csv_in, outputs=[table, dl])
     gr.Markdown("""
-**Model:** `distilbert-base-uncased`  
-**Labels:** `FAKE` (0), `REAL` (1)  
+**Model:** `distilbert-base-uncased`   
+**Labels:** `FAKE` (0), `REAL` (1)   
 > The bars show class probabilities. Higher = more confidence.
     """)
 
 if __name__ == "__main__":
-    demo.launch(share=True)  # Use demo.launch(share=True) instead for public link, if internet works
+    # Correct launch for Vercel/production:
+    demo.launch(server_name="0.0.0.0", server_port=int(os.environ.get("PORT", 7860)))
