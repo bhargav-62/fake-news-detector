@@ -45,3 +45,5 @@ You can download it from Google Drive here:
 **Instructions:**  
 After downloading, place the CSV in the same directory as your code before running scripts that need it.
 
+Deployed at:
+https://huggingface.co/spaces/Bhargav77/Fake-News
